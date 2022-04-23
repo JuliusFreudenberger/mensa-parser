@@ -1,0 +1,76 @@
+{
+  "name": "tuebingen-hohenheim",
+  "base_url": "https://www.my-stuwe.de/wp-json/mealplans/v1/canteens/",
+  "canteens": [
+    {
+      "id": "mensa-shedhalle",
+      "suffix": "611",
+      "name": "Mensa Shedhalle",
+      "street": "Schlachthausstraße 13",
+      "city": "72074 Tübingen"
+    },
+    {
+      "id": "mensa-morgenstelle",
+      "suffix": "621",
+      "name": "Mensa Morgenstelle",
+      "street": "Auf der Morgenstelle 26",
+      "city": "72076 Tübingen"
+    },
+    {
+      "id": "mensa-prinz_karl",
+      "suffix": "623",
+      "name": "Mensa Prinz Karl",
+      "street": "Hafengasse 6",
+      "city": "72070 Tübingen"
+    },
+    {
+      "id": "mensa-hohenheim",
+      "suffix": "661",
+      "name": "Mensa Hohenheim",
+      "street": "Garbenstraße 29",
+      "city": "70599 Stuttgart"
+    },
+    {
+      "id": "mensa-reutlingen",
+      "suffix": "631",
+      "name": "Mensa Reutlingen",
+      "street": "Alteburgstraße 150 Gebäude 7",
+      "city": "72762 Reutlingen"
+    },
+    {
+      "id": "mensa-nuertingen",
+      "suffix": "665",
+      "name": "Mensa Nürtingen",
+      "street": "Neckarsteige 6-10",
+      "city": "72622 Nürtingen"
+    },
+    {
+      "id": "mensa-rottenburg",
+      "suffix": "655",
+      "name": "Mensa Rottenburg",
+      "street": "Schadenweiler Hof 1",
+      "city": "72108 Rottenburg"
+    },
+    {
+      "id": "mensa-albstadt",
+      "suffix": "645",
+      "name": "Mensa Albstadt",
+      "street": "Jakobstraße 1",
+      "city": "72458 Albstadt"
+    },
+    {
+      "id": "mensa-sigmaringen",
+      "suffix": "640",
+      "name": "Mensa Sigmaringen",
+      "street": "Anton-Günther-Straße 51",
+      "city": " 72488 Sigmaringen"
+    },
+    {
+      "id": "cafeteria-morgenstelle",
+      "suffix": "724",
+      "name": "Cafeteria Morgenstelle",
+      "street": "Auf der Morgenstelle 26",
+      "city": "72076 Tübingen"
+    }
+  ]
+}
