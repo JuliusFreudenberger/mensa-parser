@@ -22,17 +22,17 @@ class Canteen:
 class Parser:
     canteens: dict[str, Canteen] = {}
 
-    def __init__(self, name, handler, shared_prefix: str):
+    def __init__(self, name, meal_data_handler, base_url: str):
         self.name = name
-        self.handler = handler
-        self.shared_prefix = shared_prefix
+        self.meal_data_handler = meal_data_handler
+        self.base_url = base_url
         parser_list[name] = self
 
     def define(self, canteen: Canteen):
         self.canteens[canteen.canteen_id] = canteen
 
-    def parse(self, canteen: str):
-        return self.handler(self.shared_prefix + self.canteens[canteen].suffix)
+    def get_meal_data(self, canteen: str):
+        return self.meal_data_handler(self.base_url + self.canteens[canteen].suffix)
 
     def get_canteen_index(self, prefix: str):
         index: dict[str, str] = {}

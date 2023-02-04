@@ -52,7 +52,7 @@ legend = {
 multiple_whitespaces_regex = re.compile('\\s{2,}')
 
 
-def parse_url(url, today=False):
+def get_meal_data(url, today=False):
     canteen = LazyBuilder()
     with urlopen(Request(url, None, {'User-Agent': 'Mozilla/5.0'})) as response:
         data = json.loads(response.read())
@@ -88,6 +88,7 @@ def define_parsers():
     with open('parsers/tuebingen.json') as canteen_file:
         canteen_json = json.load(canteen_file)
 
-    parser = Parser(canteen_json['name'], handler=parse_url, shared_prefix=canteen_json['base_url'])
+    parser = Parser(canteen_json['name'], meal_data_handler=get_meal_data,
+                    base_url=canteen_json['base_url'])
     for canteen in canteen_json['canteens']:
         parser.define(Canteen(canteen['id'], canteen['suffix'], canteen['name'], canteen['street'], canteen['city']))

@@ -22,6 +22,6 @@ def index(parser_name):
 @app.route('/mensa/<parser_name>/feed/<canteen_name>')
 def mensa(parser_name, canteen_name):
     try:
-        return utils.get_parser(parser_name).parse(canteen_name)
+        return utils.get_parser(parser_name).get_meal_data(canteen_name)
     except KeyError:
         abort(404)
