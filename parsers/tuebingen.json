@@ -7,70 +7,100 @@
       "suffix": "611",
       "name": "Mensa Shedhalle",
       "street": "Schlachthausstraße 13",
-      "city": "72074 Tübingen"
+      "zipCode": "72074",
+      "city": "Tübingen",
+      "public": true,
+      "source": "https://www.my-stuwe.de/mensa/mensa-shedhalle/"
     },
     {
       "id": "mensa-morgenstelle",
       "suffix": "621",
       "name": "Mensa Morgenstelle",
       "street": "Auf der Morgenstelle 26",
-      "city": "72076 Tübingen"
+      "zipCode": "72076",
+      "city": "Tübingen",
+      "public": true,
+      "source": "https://www.my-stuwe.de/mensa/mensa-morgenstelle-tuebingen/"
     },
     {
       "id": "mensa-prinz_karl",
       "suffix": "623",
       "name": "Mensa Prinz Karl",
       "street": "Hafengasse 6",
-      "city": "72070 Tübingen"
+      "zipCode": "72070",
+      "city": "Tübingen",
+      "public": true,
+      "source": "https://www.my-stuwe.de/mensa/mensa-prinz-karl-tuebingen/"
     },
     {
       "id": "mensa-hohenheim",
       "suffix": "661",
       "name": "Mensa Hohenheim",
       "street": "Garbenstraße 29",
-      "city": "70599 Stuttgart"
+      "zipCode": "70599",
+      "city": "Stuttgart",
+      "public": true,
+      "source": "https://www.my-stuwe.de/mensa/mensa-hohenheim/"
     },
     {
       "id": "mensa-reutlingen",
       "suffix": "630",
       "name": "Mensa Reutlingen",
       "street": "Alteburgstraße 150 Gebäude 11",
-      "city": "72762 Reutlingen"
+      "zipCode": "72762",
+      "city": "Reutlingen",
+      "public": true,
+      "source": "https://www.my-stuwe.de/mensa/mensa-reutlingen/"
     },
     {
       "id": "mensa-nuertingen",
       "suffix": "665",
       "name": "Mensa Nürtingen",
       "street": "Neckarsteige 6-10",
-      "city": "72622 Nürtingen"
+      "zipCode": "72622",
+      "city": "Nürtingen",
+      "public": true,
+      "source": "https://www.my-stuwe.de/mensa/mensa-nuertingen/"
     },
     {
       "id": "mensa-rottenburg",
       "suffix": "655",
       "name": "Mensa Rottenburg",
       "street": "Schadenweiler Hof 1",
-      "city": "72108 Rottenburg"
+      "zipCode": "72108",
+      "city": "Rottenburg",
+      "public": true,
+      "source": "https://www.my-stuwe.de/mensa/mensa-rottenburg/"
     },
     {
       "id": "mensa-albstadt",
       "suffix": "645",
       "name": "Mensa Albstadt",
       "street": "Jakobstraße 1",
-      "city": "72458 Albstadt"
+      "zipCode": "72458",
+      "city": "Albstadt",
+      "public": true,
+      "source": "https://www.my-stuwe.de/mensa/mensa-albstadt/"
     },
     {
       "id": "mensa-sigmaringen",
       "suffix": "640",
       "name": "Mensa Sigmaringen",
       "street": "Anton-Günther-Straße 51",
-      "city": " 72488 Sigmaringen"
+      "zipCode": "72488",
+      "city": "Sigmaringen",
+      "public": true,
+      "source": "https://www.my-stuwe.de/mensa/mensa-sigmaringen/"
     },
     {
       "id": "cafeteria-morgenstelle",
       "suffix": "724",
       "name": "Cafeteria Morgenstelle",
       "street": "Auf der Morgenstelle 26",
-      "city": "72076 Tübingen"
+      "zipCode": "72076",
+      "city": "Tübingen",
+      "public": true,
+      "source": "https://www.my-stuwe.de/mensa/cafeteria-morgenstelle-tuebingen/"
     }
   ]
 }

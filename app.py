@@ -9,12 +9,21 @@ app = Flask(__name__)
 
 parsers.define_parsers()
 
-VIRTUAL_HOST=os.getenv('VIRTUAL_HOST')
+VIRTUAL_HOST = os.getenv('VIRTUAL_HOST')
+
 
 @app.route('/mensa/<parser_name>.json')
 def index(parser_name):
     try:
-        return utils.get_parser(parser_name).get_canteen_index(f'https://{VIRTUAL_HOST}/meta')
+        return utils.get_parser(parser_name).get_canteen_index(f'http://{VIRTUAL_HOST}/meta')
+    except KeyError:
+        abort(404)
+
+
+@app.route('/mensa/<parser_name>/meta/<canteen_name>')
+def meta(parser_name, canteen_name):
+    try:
+        return utils.get_parser(parser_name).get_meta_data(canteen_name, f'http://{VIRTUAL_HOST}/mensa/{parser_name}/feed')
     except KeyError:
         abort(404)
 

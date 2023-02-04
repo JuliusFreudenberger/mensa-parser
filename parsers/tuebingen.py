@@ -91,4 +91,5 @@ def define_parsers():
     parser = Parser(canteen_json['name'], meal_data_handler=get_meal_data,
                     base_url=canteen_json['base_url'])
     for canteen in canteen_json['canteens']:
-        parser.define(Canteen(canteen['id'], canteen['suffix'], canteen['name'], canteen['street'], canteen['city']))
+        parser.define(Canteen(canteen['id'], canteen['suffix'], canteen['name'], canteen['street'], canteen['zipCode'],
+                              canteen['city'], canteen['public'], canteen['source']))
