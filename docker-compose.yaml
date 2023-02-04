@@ -1,0 +1,8 @@
+version: "3"
+services:
+  app:
+    image: harbor.jfreudenberger.de:8443/mensa-parser/app:latest
+    build:
+      context: .
+    ports:
+      - "127.0.0.1:8000:8000"
