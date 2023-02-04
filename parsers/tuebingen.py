@@ -4,7 +4,7 @@ from urllib.request import urlopen, Request
 
 from pyopenmensa.feed import LazyBuilder
 
-from utils import Parser
+from utils import Parser, Canteen
 
 allergens = {
     'Gl-a': 'Weizen',
@@ -90,4 +90,4 @@ def define_parsers():
 
     parser = Parser(canteen_json['name'], handler=parse_url, shared_prefix=canteen_json['base_url'])
     for canteen in canteen_json['canteens']:
-        parser.define(canteen['id'], canteen['suffix'])
+        parser.define(Canteen(canteen['id'], canteen['suffix'], canteen['name'], canteen['street'], canteen['city']))
