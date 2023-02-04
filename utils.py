@@ -50,7 +50,7 @@ class Parser:
         meta_data.city = canteen.city
         meta_data.availability = 'public' if canteen.public else 'restricted'
         meta_data.feeds.append(
-            Feed('full', priority='0', url=f'{prefix}/{canteen.canteen_id}', source=canteen.source, dayOfWeek='*', dayOfMonth='*',
+            Feed('full', priority='0', url=f'{prefix}/{canteen.canteen_id}.xml', source=canteen.source, dayOfWeek='*', dayOfMonth='*',
                  hour='9', minute='30', retry='60 1 1440'))
         return meta_data.toXMLFeed()
 
