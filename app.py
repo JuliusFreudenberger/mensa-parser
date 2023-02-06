@@ -15,7 +15,7 @@ VIRTUAL_HOST = os.getenv('VIRTUAL_HOST')
 @app.route('/mensa/<parser_name>.json')
 def index(parser_name):
     try:
-        return utils.get_parser(parser_name).get_canteen_index(f'http://{VIRTUAL_HOST}/mensa/{parser_name}/meta')
+        return utils.get_parser(parser_name).get_canteen_index(f'https://{VIRTUAL_HOST}/mensa/{parser_name}/meta')
     except KeyError:
         abort(404)
 
@@ -23,7 +23,7 @@ def index(parser_name):
 @app.route('/mensa/<parser_name>/meta/<canteen_name>.xml')
 def meta(parser_name, canteen_name):
     try:
-        return utils.get_parser(parser_name).get_meta_data(canteen_name, f'http://{VIRTUAL_HOST}/mensa/{parser_name}/feed')
+        return utils.get_parser(parser_name).get_meta_data(canteen_name, f'https://{VIRTUAL_HOST}/mensa/{parser_name}/feed')
     except KeyError:
         abort(404)
 
