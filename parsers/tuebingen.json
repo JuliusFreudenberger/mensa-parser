@@ -3,14 +3,14 @@
   "base_url": "https://www.my-stuwe.de/wp-json/mealplans/v1/canteens/",
   "canteens": [
     {
-      "id": "mensa-shedhalle",
+      "id": "mensa-wilhelmstrasse",
       "suffix": "611",
-      "name": "Mensa Shedhalle",
-      "street": "Schlachthausstraße 13",
+      "name": "Mensa Wilhelmstraße",
+      "street": "Wilhelmstraße 15",
       "zipCode": "72074",
       "city": "Tübingen",
       "public": true,
-      "source": "https://www.my-stuwe.de/mensa/mensa-shedhalle/"
+      "source": "https://www.my-stuwe.de/mensa/mensa-wilhelmstrasse-tuebingen"
     },
     {
       "id": "mensa-morgenstelle",
